@@ -31,12 +31,15 @@ function switchPages(){
             elementToReplace.innerHTML = content;
             //console.log(content);
             // Hide the current page
-            const currentPage = document.querySelector('.current-page');
-            //console.log(currentPage);
-            currentPage.classList.remove('current-page');
+            const currentPage = document.querySelector('.currpage');
             // show the hidden page
-            const targetPageElement = document.querySelector('.hidden');
-            targetPageElement.classList.add('current-page');
+            const otherPage = document.querySelector('.otherpage');
+            currentPage.classList.remove('current-page');
+            currentPage.classList.add('hidden')
+            otherPage.classList.add('current-page');
+            otherPage.classList.remove('hidden');
+            console.log("curr",currentPage);
+            console.log("other",otherPage);
         }
     });
 }
