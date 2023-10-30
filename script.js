@@ -1,4 +1,4 @@
-function adjust_background(){
+function adjustBackground(){
     const container = document.getElementById('container');
     console.log(container);
     const backgroundImage = new Image();
@@ -11,23 +11,34 @@ function adjust_background(){
         //console.log(container.style.height);
     };
 }
-function slide_pages(){
-    const page1 = document.getElementById('page1');
-    const page2 = document.getElementById('page2');
-    const pageLinks = document.querySelectorAll('.page-link');
-
-    pageLinks.forEach(link => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault();
-            if (page1.classList.contains('hidden')) {
-                page1.classList.remove('hidden');
-                page2.classList.add('hidden');
-            } else {
-                page1.classList.add('hidden');
-                page2.classList.remove('hidden');
-            }
+function switchPages(){
+    document.addEventListener("DOMContentLoaded", function () {
+        const pageLinks = document.querySelectorAll('.page-link');
+    
+        pageLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const targetPage = link.getAttribute('href');
+                navigateToPage(targetPage);
+            });
         });
+    
+        async function navigateToPage(targetPage) {
+            // Load target page
+            const elementToReplace = document.getElementById("toReplace");
+            const new_page = await fetch(targetPage);
+            const content = await new_page.text();
+            elementToReplace.innerHTML = content;
+            //console.log(content);
+            // Hide the current page
+            const currentPage = document.querySelector('.current-page');
+            //console.log(currentPage);
+            currentPage.classList.remove('current-page');
+            // show the hidden page
+            const targetPageElement = document.querySelector('.hidden');
+            targetPageElement.classList.add('current-page');
+        }
     });
 }
-adjust_background();
-slide_pages();
+adjustBackground();
+switchPages();
