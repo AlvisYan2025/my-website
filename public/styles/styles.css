@@ -16,6 +16,10 @@ body {
     background-color: rgb(181, 201, 201);
 }
 
+.page-link{
+    color:white;
+}
+
 .links-in-the-center {
     flex:1;
     align-self: center;
