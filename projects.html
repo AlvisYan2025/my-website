@@ -9,6 +9,8 @@
 <body>
     <header>
         <h1>Projects</h1>
+        <!--<p>turn on the light! </p>
+        <img class="lightbulb" src="public/media/lightbulb.png">-->
     </header>
     <main>
       <section class="project">
@@ -95,16 +97,7 @@
         </div>
       </section>
     </main>
-    <script>
-      const viewButtons = document.querySelectorAll(".view-project");
-      const projectDetails = document.querySelectorAll(".project-details");
-  
-      viewButtons.forEach((button, index) => {
-          button.addEventListener("click", () => {
-              projectDetails[index].classList.toggle("hidden");
-          });
-      });
-  </script>
-  
+    <a href="index.html"> back to home page ! </a>
+    <script src="projects.js"></script>
 </body>
 </html>
