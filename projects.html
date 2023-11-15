@@ -98,6 +98,17 @@
       </section>
     </main>
     <a href="index.html"> back to home page ! </a>
-    <script src="projects.js"></script>
+    <script>
+      function showView(){
+        const viewButtons = document.querySelectorAll(".view-project");
+        const projectDetails = document.querySelectorAll(".project-details");
+        viewButtons.forEach((button, index) => {
+          button.addEventListener("click", () => {
+            projectDetails[index].classList.toggle("hidden");
+          });
+        });
+      }
+      showView();
+    </script>
 </body>
 </html>
