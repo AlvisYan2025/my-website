@@ -14,7 +14,7 @@ function adjustBackground(){
 function showView(){
     const viewButtons = document.querySelectorAll(".view-project");
     const projectDetails = document.querySelectorAll(".project-details");
-
+    console.log('loading views');
     viewButtons.forEach((button, index) => {
         button.addEventListener("click", () => {
             projectDetails[index].classList.toggle("hidden");
