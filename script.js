@@ -11,6 +11,16 @@ function adjustBackground(){
         //console.log(container.style.height);
     };
 }
+function showView(){
+    const viewButtons = document.querySelectorAll(".view-project");
+    const projectDetails = document.querySelectorAll(".project-details");
+
+    viewButtons.forEach((button, index) => {
+        button.addEventListener("click", () => {
+            projectDetails[index].classList.toggle("hidden");
+        });
+    });
+}
 function switchPages(){
     document.addEventListener("DOMContentLoaded", function () {
         const pageLinks = document.querySelectorAll('.page-link');
@@ -40,19 +50,9 @@ function switchPages(){
             otherPage.classList.remove('hidden');
             console.log("curr",currentPage);
             console.log("other",otherPage);
+            showView();
         }
     });
 }
 adjustBackground();
 switchPages();
-function showView(){
-    const viewButtons = document.querySelectorAll(".view-project");
-    const projectDetails = document.querySelectorAll(".project-details");
-
-    viewButtons.forEach((button, index) => {
-        button.addEventListener("click", () => {
-            projectDetails[index].classList.toggle("hidden");
-        });
-    });
-}
-document.addEventListener('DOMContentLoaded',showView);
