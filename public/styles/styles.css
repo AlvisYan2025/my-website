@@ -66,3 +66,6 @@ section {
     transform: translateY(100%);
     display: none;
 }
+.back-link {
+    padding-left: 10px;
+}
