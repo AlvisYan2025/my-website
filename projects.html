@@ -9,105 +9,167 @@
 <body>
     <header>
         <h1>Projects</h1>
-        <!--<p>turn on the light! </p>
-        <img class="lightbulb" src="public/media/lightbulb.png">-->
     </header>
-    <main>
-      <section class="project">
-        <h2 class="project-title">TaskTrainer</h2>
-        <p class="project-description"> A task manager web application built from html, css, and backend Javascript. </p>
-        <button class="view-project">Tell Me More!</button>
-        <div class="project-details hidden">
-          <br><br>
-          <p class="project-detail"> No Procrastinations! ---- a task manager that tracks your current tasks with priority. You can pin your tasks, add new tasks, and see the start/due date of a task. Built from html, css, and backend Javascript. Packages used include node.js, express and hbs. </p>
-          <br><br>
-          <a class="project-link">link is here!</a>
+    <p style="margin-left: 20px;">note: I took off most the projects from cloud servers to save cost, so links to project might not work</p>
+    <main class="container">
+      <section class="project card mb-4">
+        <div class="card-body">
+            <h2 class="card-title project-title">Voice Math</h2>
+            <p class="card-text project-description"> Create simple math questions and answer on your microphone. </p>
+            <button class="btn btn-primary view-project" data-toggle="collapse" data-target="#project-details-0">
+                Tell Me More!
+            </button>
+            <div id="project-details-1" class="project-details hidden collapse">
+                <br><br>
+                <p class="card-text project-detail"> With google's speech to text api, this program will convert microphone input to text. You can answer the questions with your microphone to generated math questions. Designed especially for kids who are not good at simple math questions but fluent with computer.  </p>
+                <br><br>
+                <a href="#" class="card-link project-link">Link is here!</a>
+            </div>
         </div>
       </section>
-
-      <section class="project">
-        <h2 class="project-title">Audio Processing With Python</h2>
-        <p class="project-description"> discovered ways of audio processing with python. </p>
-        <button class="view-project">Tell Me More!</button>
-        <div class="project-details hidden">
-          <br><br>
-          <p class="project-detail">Audio Processing on WAV format files with python. Including visualization of sound wave, clipping/appending, manipulation of amplitude and frequency.</p>
-          <br><br>
-          <a href="public/media/Project_ Audio Processing (1).pdf" class="project-link">link is here!</a>
+      <section class="project card mb-4">
+        <div class="card-body">
+            <h2 class="card-title project-title">Pykemon Match</h2>
+            <p class="card-text project-description"> A front-end pokemon cards matching game. </p>
+            <button class="btn btn-primary view-project" data-toggle="collapse" data-target="#project-details-0">
+                Tell Me More!
+            </button>
+            <div id="project-details-1" class="project-details hidden collapse">
+                <br><br>
+                <p class="card-text project-detail">Click two cards to match. The pair of card will reveal themselves upon clicking. If match, the cards will cancle each other out. Try to match as more number of cards within the least amount of time!</p>
+                <br><br>
+                <a href="#" class="card-link project-link">Link is here!</a>
+            </div>
         </div>
+    </section>
+      <section class="project card mb-4">
+          <div class="card-body">
+              <h2 class="card-title project-title">TaskTrainer</h2>
+              <p class="card-text project-description">A task manager web application built from HTML, CSS, and backend JavaScript.</p>
+              <button class="btn btn-primary view-project" data-toggle="collapse" data-target="#project-details-1">
+                  Tell Me More!
+              </button>
+              <div id="project-details-1" class="project-details hidden collapse">
+                  <br><br>
+                  <p class="card-text project-detail">No Procrastinations! A task manager that tracks your current tasks with priority. You can pin your tasks, add new tasks, and see the start/due date of a task. Built from HTML, CSS, and backend JavaScript. Packages used include Node.js, Express, and HBS.</p>
+                  <br><br>
+                  <a href="#" class="card-link project-link">Link is here!</a>
+              </div>
+          </div>
       </section>
-
-      <section class="project">
-        <h2 class="project-title">Budget Tracker</h2>
-        <p class="project-description"> It's just a budget tracker </p>
-        <button class="view-project">Tell Me More!</button>
-        <div class="project-details hidden">
-          <br><br>
-          <p class="project-detail"> A budget tracker web application, built with python for backend and html, css and Javascript for frontend. Connect with a local mongoDB database. Packages used include flask and pymongo.</p>
-          <br><br>
-          <a href="public/media/Project_ Audio Processing (1).pdf" class="project-link">link is here!</a>
-        </div>
+  
+      <section class="project card mb-4">
+          <div class="card-body">
+              <h2 class="card-title project-title">Audio Processing With Python</h2>
+              <p class="card-text project-description">Discovered ways of audio processing with Python.</p>
+              <button class="btn btn-primary view-project" data-toggle="collapse" data-target="#project-details-2">
+                  Tell Me More!
+              </button>
+              <div id="project-details-2" class="project-details hidden collapse">
+                  <br><br>
+                  <p class="card-text project-detail">Audio Processing on WAV format files with Python. Including visualization of sound wave, clipping/appending, manipulation of amplitude and frequency.</p>
+                  <br><br>
+                  <a href="public/media/Project_Audio_Processing (1).pdf" class="card-link project-link">Link is here!</a>
+              </div>
+          </div>
       </section>
-
-      <section class="project">
-        <h2 class="project-title">Fake Youtube</h2>
-        <p class="project-description"> A fake youtube to prank your friends </p>
-        <button class="view-project">Tell Me More!</button>
-        <div class="project-details hidden">
-          <br><br>
-          <p class="project-detail"> A fake youtube home page. It is, essentially, fake, meaning it doesn't direct you to anywhere, and you cannot really watch the videos. How I supposed to use this? Built from only html and css. </p>
-          <br><br>
-          <a href="" class="project-link">link is here!</a>
-        </div>
+  
+      <section class="project card mb-4">
+          <div class="card-body">
+              <h2 class="card-title project-title">Budget Tracker</h2>
+              <p class="card-text project-description">It's just a budget tracker</p>
+              <button class="btn btn-primary view-project" data-toggle="collapse" data-target="#project-details-3">
+                  Tell Me More!
+              </button>
+              <div id="project-details-3" class="project-details hidden collapse">
+                  <br><br>
+                  <p class="card-text project-detail">A budget tracker web application, built with Python for the backend and HTML, CSS, and JavaScript for the frontend. Connects with a local MongoDB database. Packages used include Flask and PyMongo.</p>
+                  <br><br>
+                  <a href="#" class="card-link project-link">Link is here!</a>
+              </div>
+          </div>
       </section>
-
-      <section class="project">
-        <h2 class="project-title">A Self-enhancing Dicegame Playing Robot</h2>
-        <p class="project-description"> A program that plays a dice game with itself, and keeps improving its behavior through supervised machine learning.</p>
-        <button class="view-project">Tell Me More!</button>
-        <div class="project-details hidden">
-          <br><br>
-          <p class="project-detail"> The game is similar to what's called "Farkle", where players take turns to roll dices and one can choose how many times to roll. If the total points landed on a certain range, the player wins. If it exceeds the upper limit, the player loses. This program will keep playing this game with itself and learn through a simple supervised machine learning algorithm (Native Bayes) and gets better. You can choose to display each trace of the game.</p>
-          <br><br>
-          <a href="" class="project-link">link is here!</a>
-        </div>
+  
+      <section class="project card mb-4">
+          <div class="card-body">
+              <h2 class="card-title project-title">Fake Youtube</h2>
+              <p class="card-text project-description">A fake YouTube to prank your friends</p>
+              <button class="btn btn-primary view-project" data-toggle="collapse" data-target="#project-details-4">
+                  Tell Me More!
+              </button>
+              <div id="project-details-4" class="project-details hidden collapse">
+                  <br><br>
+                  <p class="card-text project-detail">A fake YouTube homepage. It is essentially fake, meaning it doesn't direct you anywhere, and you cannot really watch the videos. Built from only HTML and CSS.</p>
+                  <br><br>
+                  <a href="#" class="card-link project-link">Link is here!</a>
+              </div>
+          </div>
       </section>
-      
-      <section class="project">
-        <h2 class="project-title">Ray-Tracer</h2>
-        <p class="project-description"> A simple ray-tracer, with a camera, objects in the scene with different textures, and different reflection parameters. </p>
-        <button class="view-project">Tell Me More!</button>
-        <div class="project-details hidden">
-          <br><br>
-          <p class="project-detail"> This project follows this tutorial by Peter Shirley <a href='https://raytracing.github.io/books/RayTracingInOneWeekend.html'> link </a> A simple Ray-tracing program that is built with C++, with demonstrations. </p>
-          <br><br>
-          <a href="" class="project-link">link is here!</a>
-        </div>
+  
+      <section class="project card mb-4">
+          <div class="card-body">
+              <h2 class="card-title project-title">A Self-enhancing Dicegame Playing Robot</h2>
+              <p class="card-text project-description">A program that plays a dice game with itself and keeps improving its behavior through supervised machine learning.</p>
+              <button class="btn btn-primary view-project" data-toggle="collapse" data-target="#project-details-5">
+                  Tell Me More!
+              </button>
+              <div id="project-details-5" class="project-details hidden collapse">
+                  <br><br>
+                  <p class="card-text project-detail">The game is similar to what's called "Farkle," where players take turns to roll dice, and one can choose how many times to roll. If the total points land on a certain range, the player wins. If it exceeds the upper limit, the player loses. This program will keep playing this game with itself and learn through a simple supervised machine learning algorithm (Naive Bayes) and gets better. You can choose to display each trace of the game.</p>
+                  <br><br>
+                  <a href="#" class="card-link project-link">Link is here!</a>
+              </div>
+          </div>
       </section>
-
-      <section class="project">
-        <h2 class="project-title">SnapSlice Studio &#40; in progress &#41;</h2>
-        <p class="project-description"> A Image clipping and video clipping/editing tool. Features include: an authetication system, upload art works to database, image manipulations including resizing and adding watermarks. You can also share your work with other users on this platform! </p>
-        <button class="view-project">Tell Me More!</button>
-        <div class="project-details hidden">
-          <br><br>
-          <p class="project-detail"> this project is still in progress. But it will be built with Javascript, html and css. It also will use some templates like Bootstrap for frontend css and maybe React. Also will use a database, and external APIs for image processing.</p>
-          <br><br>
-          <a href="" class="project-link">link is here!</a>
-        </div>
+  
+      <section class="project card mb-4">
+          <div class="card-body">
+              <h2 class="card-title project-title">Ray-Tracer</h2>
+              <p class="card-text project-description">A simple ray-tracer, with a camera, objects in the scene with different textures, and different reflection parameters.</p>
+              <button class="btn btn-primary view-project" data-toggle="collapse" data-target="#project-details-6">
+                  Tell Me More!
+              </button>
+              <div id="project-details-6" class="project-details hidden collapse">
+                  <br><br>
+                  <p class="card-text project-detail">This project follows this tutorial by Peter Shirley <a href='https://raytracing.github.io/books/RayTracingInOneWeekend.html'>link</a>. A simple Ray-tracing program that is built with C++, with demonstrations.</p>
+                  <br><br>
+                  <a href="#" class="card-link project-link">Link is here!</a>
+              </div>
+          </div>
       </section>
-      <section class="project">
-        <h2 class="project-title">PykemonGo</h2>
-        <p class="project-description"> A python package that would return ascii arts of pokemons! </p>
-        <button class="view-project">Tell Me More!</button>
-        <div class="project-details hidden">
-          <br><br>
-          <p class="project-detail"> This python package would return a figure of pokemon when you call with the pokemon's name. I'm thinking adding some machine learning features to it, but to be continued. </p>
-          <br><br>
-          <a href="https://pypi.org/project/pykemonGo/1.0.0/" class="project-link">link is here!</a>
-        </div>
+  
+      <section class="project card mb-4">
+          <div class="card-body">
+              <h2 class="card-title project-title">SnapSlice Studio (in progress)</h2>
+              <p class="card-text project-description">An image clipping and video clipping/editing tool. Features include an authentication system, upload artworks to the database, image manipulations including resizing and adding watermarks. You can also share your work with other users on this platform!</p>
+              <button class="btn btn-primary view-project" data-toggle="collapse" data-target="#project-details-7">
+                  Tell Me More!
+              </button>
+              <div id="project-details-7" class="project-details hidden collapse">
+                  <br><br>
+                  <p class="card-text project-detail">This project is still in progress. But it will be built with JavaScript, HTML, and CSS. It also will use some templates like Bootstrap for frontend CSS and maybe React. Also will use a database and external APIs for image processing.</p>
+                  <br><br>
+                  <a href="#" class="card-link project-link">Link is here!</a>
+              </div>
+          </div>
       </section>
-    </main>
+  
+      <section class="project card mb-4">
+          <div class="card-body">
+              <h2 class="card-title project-title">PykemonGo</h2>
+              <p class="card-text project-description">A Python package that would return ASCII arts of pokemons!</p>
+              <button class="btn btn-primary view-project" data-toggle="collapse" data-target="#project-details-8">
+                  Tell Me More!
+              </button>
+              <div id="project-details-8" class="project-details hidden collapse">
+                  <br><br>
+                  <p class="card-text project-detail">This Python package would return a figure of a Pokemon when you call with the Pokemon's name. I'm thinking of adding some machine learning features to it, but to be continued.</p>
+                  <br><br>
+                  <a href="https://pypi.org/project/pykemonGo/1.0.0/" class="card-link project-link">Link is here!</a>
+              </div>
+          </div>
+      </section>
+  </main>
     <a href="index.html"> back to home page ! </a>
     <script>
       function showView(){
@@ -123,5 +185,8 @@
       console.log('set up buttons');
       showView();
     </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
