@@ -34,3 +34,8 @@ p {
     margin: 20px 0;
     line-height: 1.5;
 }
+.skill1{
+    display: inline-block;
+    border-color: black;
+    border-radius: 15px;
+}
